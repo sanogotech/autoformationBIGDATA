@@ -20,7 +20,7 @@
 
 ---
 
-## 🔹 **Niveau 1 : Fondamentaux**
+## 🔹 **Niveau 0 : Fondamentaux**
 
 ### 🎯 Objectif : Acquérir les bases en Linux, Python et Java pour manipuler des outils Big Data.
 
@@ -29,6 +29,148 @@
 | N1-1 | En tant qu'apprenant, je veux manipuler les commandes Linux de base pour préparer mon environnement Big Data. | Script d'automatisation de setup, manipulation de fichiers, users, droits, SSH. | `linux_basics.sh`       | Bash, Linux             |
 | N1-2 | En tant qu’apprenant, je veux écrire un script Python simple pour lire et analyser un fichier CSV.            | Notions de variables, boucles, fonctions, pandas.                               | `python_intro.ipynb`    | Python, Jupyter, pandas |
 | N1-3 | En tant qu’apprenant, je veux compiler et exécuter mon premier programme Java.                                | Hello World, gestion de classes, compilation manuelle.                          | `java_hello_world.java` | Java JDK                |
+
+
+-----------
+Voici une **extension complète du Niveau 1 : Fondamentaux des Données** à intégrer dans la **feuille de route Big Data** sous forme de **backlog détaillé**, avec **compétences à acquérir**, **ressources**, **cas pratiques** et **user stories**. Ce niveau est conçu pour durer **3 à 4 semaines**, idéal pour bâtir une base solide avant d’aborder l’architecture Big Data.
+
+---
+
+## 🔹 **Niveau 1 – Fondamentaux des données (3–4 semaines)**
+
+🎯 **Objectif global** : Comprendre les structures de données, les formats, les bases relationnelles et NoSQL, ainsi que les modèles de données.
+
+---
+
+### 🗄️ **1. Bases de données relationnelles (SQL)**
+
+#### ✅ Compétences à acquérir :
+
+* Maîtriser les requêtes SQL de base : `SELECT`, `INSERT`, `UPDATE`, `DELETE`
+* Effectuer des **jointures**, des **agrégations**, des **sous-requêtes**
+* Appliquer les **principes de normalisation**
+
+#### 📚 Ressources recommandées :
+
+* [SQLZoo](https://sqlzoo.net/)
+* [W3Schools SQL Tutorial](https://www.w3schools.com/sql/)
+
+#### 🧪 Cas pratique :
+
+**Créer une base de données pour une boutique en ligne**
+
+* Tables : Clients, Produits, Commandes
+* Ajouter des données fictives
+* Requêtes : ventes mensuelles, top produits, clients inactifs, panier moyen
+
+#### 🧾 User Stories :
+
+| ID       | User Story                                                                                                      | Livrables                           | Outils              |
+| -------- | --------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ------------------- |
+| N1-SQL-1 | En tant qu'utilisateur, je veux interroger les ventes mensuelles pour suivre l’évolution du chiffre d’affaires. | `boutique.sql`, rapport de requêtes | SQLite / PostgreSQL |
+| N1-SQL-2 | En tant qu’analyste, je veux trouver les produits les plus vendus par catégorie.                                | `requetes_top_ventes.sql`           | SQL                 |
+| N1-SQL-3 | En tant qu’admin, je veux structurer ma base selon la 3NF.                                                      | `schema_normalise.pdf`              | dbdiagram.io        |
+
+---
+
+### 🗃️ **2. Bases de données NoSQL**
+
+#### ✅ Compétences à acquérir :
+
+* Différences entre relationnel et NoSQL
+* Manipulation de documents **JSON** avec **MongoDB**
+* Introduction au stockage en mémoire avec **Redis**
+
+#### 📚 Ressources recommandées :
+
+* [MongoDB University](https://university.mongodb.com/)
+* [Redis Tutorials](https://redis.io/docs/)
+
+#### 🧪 Cas pratique :
+
+**Implémenter un catalogue de produits NoSQL et un système de cache**
+
+* Base MongoDB : Produits (nom, prix, stock, catégories)
+* Ajout de recherche filtrée
+* Mise en cache des produits populaires avec Redis
+
+#### 🧾 User Stories :
+
+| ID         | User Story                                                                                      | Livrables                  | Outils        |
+| ---------- | ----------------------------------------------------------------------------------------------- | -------------------------- | ------------- |
+| N1-NOSQL-1 | En tant que développeur, je veux stocker mes produits dans une collection MongoDB.              | `mongo_insert_products.js` | MongoDB       |
+| N1-NOSQL-2 | En tant qu’analyste, je veux rechercher les produits disponibles dans une catégorie spécifique. | `mongo_query_products.js`  | MongoDB       |
+| N1-NOSQL-3 | En tant que devOps, je veux mettre en cache les produits populaires avec Redis.                 | `redis_cache.py`           | Redis, Python |
+
+---
+
+### 📄 **3. Formats de données (CSV, JSON, Parquet, Avro)**
+
+#### ✅ Compétences à acquérir :
+
+* Comprendre les différences : **CSV (simple)**, **JSON (hiérarchique)**, **Avro/Parquet (optimisés Big Data)**
+* Convertir les formats en Python
+
+#### 📚 Ressources recommandées :
+
+* [DataFlair – Big Data File Formats](https://data-flair.training/blogs/file-formats-in-hadoop/)
+
+#### 🧪 Cas pratique :
+
+**Convertir un fichier CSV des ventes en format Parquet et Avro**
+
+* Lecture/écriture avec pandas, pyarrow, fastavro
+* Comparaison de la taille et de la vitesse de lecture
+
+#### 🧾 User Stories :
+
+| ID          | User Story                                                                                                | Livrables              | Outils               |
+| ----------- | --------------------------------------------------------------------------------------------------------- | ---------------------- | -------------------- |
+| N1-FORMAT-1 | En tant que data engineer, je veux convertir mes fichiers CSV en Parquet pour l’optimisation du stockage. | `csv_to_parquet.py`    | Python, pyarrow      |
+| N1-FORMAT-2 | En tant que développeur, je veux comparer la taille de fichiers JSON et Avro.                             | `format_comparator.py` | fastavro, JSON, Avro |
+
+---
+
+### 🧠 **4. Modélisation de données**
+
+#### ✅ Compétences à acquérir :
+
+* Créer des **modèles conceptuels**, **logiques** et **physiques**
+* Utiliser des outils de modélisation : **dbdiagram.io**, **Lucidchart**
+* Notions d’**entrepôt de données** et schéma en **étoile** et **flocon**
+
+#### 📚 Ressources recommandées :
+
+* [dbdiagram.io](https://dbdiagram.io/)
+* [Lucidchart](https://www.lucidchart.com/pages/)
+
+#### 🧪 Cas pratique :
+
+**Modéliser un entrepôt de données pour une entreprise e-commerce**
+
+* Faits : Commandes
+* Dimensions : Clients, Produits, Dates
+* Modèle étoile vs flocon
+
+#### 🧾 User Stories :
+
+| ID         | User Story                                                                                            | Livrables               | Outils       |
+| ---------- | ----------------------------------------------------------------------------------------------------- | ----------------------- | ------------ |
+| N1-MODEL-1 | En tant qu’analyste, je veux modéliser un entrepôt de données e-commerce avec des dimensions claires. | `modele_entrepot.png`   | dbdiagram.io |
+| N1-MODEL-2 | En tant que concepteur, je veux comparer les modèles en étoile et en flocon.                          | `comparatif_modeles.md` | Lucidchart   |
+
+---
+
+## 📁 Contenu à ajouter dans le pack `.zip` :
+
+| Dossier                  | Fichiers suggérés                                                 |
+| ------------------------ | ----------------------------------------------------------------- |
+| `niveau_1_sql/`          | `boutique.sql`, `requetes_top_ventes.sql`, `schema_normalise.pdf` |
+| `niveau_1_nosql/`        | `mongo_insert_products.js`, `redis_cache.py`                      |
+| `niveau_1_formats/`      | `csv_to_parquet.py`, `format_comparator.py`                       |
+| `niveau_1_modelisation/` | `modele_entrepot.png`, `comparatif_modeles.md`                    |
+
+
 
 ---
 
