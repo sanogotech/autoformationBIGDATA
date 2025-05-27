@@ -2,6 +2,22 @@
 
  Les **cas pratiques Big Data**, classés par niveau (1 à 6), avec **user stories**, **objectifs pédagogiques**, **livrables**, et **technos/outils utilisés**. Ce backlog peut servir de base pour un projet de formation, un bootcamp, ou une autoformation intensive.
 
+
+
+### 📦 Contenu détaillé :
+
+| Niveau      | Dossier                      | Fichiers inclus                                                   |
+| ----------- | ---------------------------- | ----------------------------------------------------------------- |
+| Niveau 1    | `niveau_1_fondamentaux/`     | `linux_basics.sh`, `python_intro.ipynb`, `java_hello_world.java`  |
+| Niveau 1bis | `niveau_1bis_bi_end_to_end/` | `etl_process.sql`, `powerbi_dashboard.pbix`, `airflow_dag_etl.py` |
+| Niveau 2    | `niveau_2_architecture/`     | `mapreduce_wordcount.py`, `hdfs_io.py`                            |
+| Niveau 3    | `niveau_3_streaming/`        | `kafka_producer.py`, `spark_streaming_twitter.py`                 |
+| Niveau 4    | `niveau_4_visualisation/`    | `hive_query.sql`, `superset_dashboard_setup.md`                   |
+| Niveau 5    | `niveau_5_ml/`               | `spark_mllib_churn_prediction.py`, `mlflow_tracking_demo.py`      |
+| Niveau 6    | `niveau_6_devops/`           | `docker_compose_spark.yml`, `grafana_dashboard.json`              |
+
+
+
 ---
 
 ## 🔹 **Niveau 1 : Fondamentaux**
