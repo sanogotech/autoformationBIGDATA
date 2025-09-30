@@ -3,6 +3,8 @@
 Le paysage DATA a évolué rapidement : du **Data Warehouse** classique aux approches modernes comme **Data Lakehouse** et **Data Mesh**.
 Voici un guide détaillé pour comprendre **les philosophies d’architecture**, leurs avantages, limites, technologies, stockage recommandé, et cas d’usage concrets.
 
+![Architecture DATA](https://github.com/sanogotech/autoformationBIGDATA/blob/main/ArchitectureDATA/ArchitectureDATA.jpg)
+
 ---
 
 ## 1️⃣ **Data Warehouse (DW) 🏛️**
